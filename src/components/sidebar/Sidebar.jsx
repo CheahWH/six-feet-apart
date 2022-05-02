@@ -1,5 +1,6 @@
 import "./sidebar.css"
-import {RssFeed,
+import {
+    RssFeed,
     Chat, 
     VideoLibrary, 
     Groups,
@@ -8,6 +9,7 @@ import {RssFeed,
     Work,
     Event, 
     School,
+    SchoolSharp,
 } from "@mui/icons-material"
 import {Users} from "../../dummyData"
 import CloseFriend from "../closeFriend/CloseFriend";
@@ -21,6 +23,38 @@ export default function Sidebar() {
                     <li className="sidebarListItem">
                         <RssFeed className="sidebarIcon"/>
                         <span className="sidebarListItem">Feed</span>
+                    </li>
+                    <li className="sidebarListItem">
+                        <Chat className="sidebarIcon"/>
+                        <span className="sidebarListItem">Chats</span>
+                    </li>
+                    <li className="sidebarListItem">
+                        <VideoLibrary className="sidebarIcon"/>
+                        <span className="sidebarListItem">Videos</span>
+                    </li>
+                    <li className="sidebarListItem">
+                        <Groups className="sidebarIcon"/>
+                        <span className="sidebarListItem">Groups</span>
+                    </li>
+                    <li className="sidebarListItem">
+                        <Bookmarks className="sidebarIcon"/>
+                        <span className="sidebarListItem">Bookmarks</span>
+                    </li>
+                    <li className="sidebarListItem">
+                        <QuestionMark className="sidebarIcon"/>
+                        <span className="sidebarListItem">Questions</span>
+                    </li>
+                    <li className="sidebarListItem">
+                        <Work className="sidebarIcon"/>
+                        <span className="sidebarListItem">Jobs</span>
+                    </li>
+                    <li className="sidebarListItem">
+                        <Event className="sidebarIcon"/>
+                        <span className="sidebarListItem">Events</span>
+                    </li>
+                    <li className="sidebarListItem">
+                        <School className="sidebarIcon"/>
+                        <span className="sidebarListItem">Courses</span>
                     </li>
                 </ul>
                 <button className="sidebarButton">Show More</button>
